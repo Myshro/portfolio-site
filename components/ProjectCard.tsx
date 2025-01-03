@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           alt={`${title} Preview`}
           layout="fill"
           objectFit="cover"
-          style={{ filter: "grayscale(80%)" }}
+          style={{ filter: "grayscale(75%)" }}
         />
       </div>
       <div className="p-6">

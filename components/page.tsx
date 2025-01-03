@@ -3,8 +3,9 @@
 import { Github, Linkedin, Mail } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import Image from "next/image"
 import ProjectCard from './ProjectCard'
+import { useEffect, useState } from 'react';
+import { get } from 'http';
 
 export default function Portfolio() {
   return (
@@ -29,7 +30,9 @@ export default function Portfolio() {
             Jungtaek Hong
           </h1>
           <p className="text-gray-400 text-xl mb-8">
-            I build modern web and Unity applications
+            Hi! I go by Andrew. Currently a second year at the
+            <span className="font-extrabold bg-gradient-to-b from-orange-400 to-purple-500 bg-clip-text text-transparent"> University of Virginia. </span>  
+            I develop web applications and games. Here, you can check out what I'm working on.
           </p>
           <div className="flex gap-4">
             <Button className="bg-white text-black hover:bg-gray-200" onClick={() => { 
@@ -37,10 +40,16 @@ export default function Portfolio() {
             }}>
               View Projects
             </Button>
-            <Button className="bg-white text-black hover:bg-gray-200">
+            <Button className="bg-white text-black hover:bg-gray-200" onClick={() => {
+                const link = document.createElement('a');
+                link.href = "/resume/Resume.pdf"; 
+                link.download = "jungtaek_hong_resume.pdf"; 
+                link.click();
+            }}>
               Resume
             </Button>
           </div>
+          {getRandomQuote()}
         </div>
         <div className="hidden lg:block">
           <div className="relative w-64 h-64">
@@ -150,3 +159,25 @@ export default function Portfolio() {
   )
 }
 
+const quotes: string[] = [
+  "Adventure is worthwhile in itself",
+  "Smooth seas don't make skilled sailors",
+  "Do what you can, with what you have, where you are",
+  "A journey of a thousand miles begins with a single step",
+  "Blessed are the curious, for they shall have adventures",
+  "The greater the difficulty, the more glory in surmounting it"
+];
+
+const getRandomQuote = () => {
+  const [quote, setQuote] = useState('');
+
+  useEffect(() => {
+    setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
+  }, []);
+
+  return (
+    <p className="text-gray-500 text-l mt-8 italic">
+      "{quote}"
+    </p>
+  );
+};
