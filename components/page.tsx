@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import ProjectCard from './ProjectCard'
 import { useEffect, useState } from 'react';
-import { get } from 'http';
 
 export default function Portfolio() {
   return (
@@ -32,7 +31,7 @@ export default function Portfolio() {
           <p className="text-gray-400 text-xl mb-8">
             Hi! I go by Andrew. Currently a second year at the
             <span className="font-extrabold bg-gradient-to-b from-orange-400 to-purple-500 bg-clip-text text-transparent"> University of Virginia. </span>  
-            I develop web applications and games. Here, you can check out what I'm working on.
+            I develop web applications and games. Here, you can check out what I&apos;m working on.
           </p>
           <div className="flex gap-4">
             <Button className="bg-white text-black hover:bg-gray-200" onClick={() => { 
@@ -49,7 +48,7 @@ export default function Portfolio() {
               Resume
             </Button>
           </div>
-          {getRandomQuote()}
+          {RandomQuote()}
         </div>
         <div className="hidden lg:block">
           <div className="relative w-64 h-64">
@@ -110,21 +109,21 @@ export default function Portfolio() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ProjectCard
             title="CAINE Website"
-            description="A static site built with SvelteKit for CAINE, a comics and animation club at the University of Virginia"
+            description="A static site built with SvelteKit for CAINE, a comics and animation club at the University of Virginia."
             imagePath="/projects/caine_logo.png"
             liveUrl="https://caine-six.vercel.app/"
             githubUrl="https://github.com/example/repo"
           />
           <ProjectCard
             title="ByteSmith"
-            description="A stepwise bit operation calculator. 2nd Place Winner of the 'Hack The Map 2024 @UVA' hackathon"
+            description="A stepwise bit operation calculator. 2nd Place Winner of the 'Hack The Map 2024 @UVA' hackathon."
             imagePath="/projects/byte.png"
             liveUrl="https://byte-smith.vercel.app/"
             githubUrl="https://github.com/example/repo"
           />
           <ProjectCard
             title="Gravitational Wave Surfer"
-            description="An educational game developed to teach General Relativity concepts. Developed under the UVA Physics Department"
+            description="An educational game developed to teach General Relativity concepts. Developed under the UVA Physics Department."
             imagePath="/projects/saucer.png"
             githubUrl="https://github.com/zackrcarson/GravitationalWaveSurfer"
           />
@@ -168,7 +167,7 @@ const quotes: string[] = [
   "The greater the difficulty, the more glory in surmounting it"
 ];
 
-const getRandomQuote = () => {
+const RandomQuote = () => {
   const [quote, setQuote] = useState('');
 
   useEffect(() => {
@@ -177,7 +176,7 @@ const getRandomQuote = () => {
 
   return (
     <p className="text-gray-500 text-l mt-8 italic">
-      "{quote}"
+      &ldquo;{quote}&rdquo;
     </p>
   );
 };
