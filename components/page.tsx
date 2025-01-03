@@ -29,7 +29,7 @@ export default function Portfolio() {
             Jungtaek Hong
           </h1>
           <p className="text-gray-400 text-xl mb-8">
-            Developer building modern web and Unity applications
+            I build modern web and Unity applications
           </p>
           <div className="flex gap-4">
             <Button className="bg-white text-black hover:bg-gray-200" onClick={() => { 
