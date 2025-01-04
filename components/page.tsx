@@ -12,7 +12,7 @@ export default function Portfolio() {
       {/* Navigation */}
       <nav className="sticky top-0 border-b border-gray-800 bg-black/80 backdrop-blur-sm z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-xl select-none">{`{ JH }`}</div>
+        <div className="text-sm text-gray-500 select-none">{`{JH}`}</div>
           <div className="flex gap-6">
             <a href="#about" className="hover:text-gray-400">About</a>
             <a href="#skills" className="hover:text-gray-400">Skills</a>
@@ -41,8 +41,8 @@ export default function Portfolio() {
             </Button>
             <Button className="bg-white text-black hover:bg-gray-200" onClick={() => {
                 const link = document.createElement('a');
-                link.href = "/resume/Resume.pdf"; 
-                link.download = "jungtaek_hong_resume.pdf"; 
+                link.href = "/resume/JungtaekHongResume.pdf"; 
+                link.download = "JungtaekHongResume.pdf"; 
                 link.click();
             }}>
               Resume
