@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Home | Jungtaek Hong",
+  title: "Andrew Hong",
   description: "Portfolio",
 };
 

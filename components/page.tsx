@@ -12,7 +12,7 @@ export default function Portfolio() {
       {/* Navigation */}
       <nav className="sticky top-0 border-b border-gray-800 bg-black/80 backdrop-blur-sm z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-sm text-gray-500 select-none">{`{JH}`}</div>
+        <div className="text-sm text-gray-500 select-none">{`{AH}`}</div>
           <div className="flex gap-6">
             <a href="#about" className="hover:text-gray-400">About</a>
             <a href="#skills" className="hover:text-gray-400">Skills</a>
@@ -26,12 +26,12 @@ export default function Portfolio() {
       <div id="about" className="max-w-6xl mx-auto px-4 py-20 flex items-center justify-between">
         <div className="max-w-2xl">
           <h1 className="text-6xl font-bold mb-6">
-            Jungtaek Hong
+            Andrew Hong
           </h1>
           <p className="text-gray-400 text-xl mb-8">
-            Hi! I go by Andrew. Currently a second year at the
+            Hi! I'm currently a second year at the
             <span className="font-extrabold bg-gradient-to-b from-orange-400 to-purple-500 bg-clip-text text-transparent"> University of Virginia. </span>  
-            I develop web applications and games. Here, you can check out what I&apos;m working on.
+            Here, you can check out what I&apos;m working on.
           </p>
           <div className="flex gap-4">
             <Button className="bg-white text-black hover:bg-gray-200" onClick={() => { 
@@ -41,8 +41,8 @@ export default function Portfolio() {
             </Button>
             <Button className="bg-white text-black hover:bg-gray-200" onClick={() => {
                 const link = document.createElement('a');
-                link.href = "/resume/JungtaekHongResume.pdf"; 
-                link.download = "JungtaekHongResume.pdf"; 
+                link.href = "/resume/AndrewHongResume.pdf"; 
+                link.download = "AndrewHongResume.pdf"; 
                 link.click();
             }}>
               Resume
@@ -74,21 +74,20 @@ export default function Portfolio() {
             <Card className="bg-black p-6 border-gray-800">
               <h3 className="text-xl font-bold mb-4 text-gray-100">Frontend</h3>
               <ul className="space-y-2 text-gray-400">
+                <li>HTML / CSS / JS</li>
                 <li>Typescript</li>
                 <li>Next.js</li>
                 <li>Tailwind CSS</li>
                 <li>SvelteKit</li>
-                <li>Vue</li>
               </ul>
             </Card>
             <Card className="bg-black p-6 border-gray-800">
               <h3 className="text-xl font-bold mb-4 text-gray-100">Backend</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>Node.js</li>
-                <li>Python</li>
-                <li>Java</li>
+                <li>Python / Django / Flask</li>
+                <li>Java / JDBC</li>
                 <li>SQL</li>
-                <li>MongoDB</li>
               </ul>
             </Card>
             <Card className="bg-black p-6 border-gray-800">
@@ -111,7 +110,7 @@ export default function Portfolio() {
             title="CAINE Website"
             description="A static site built with SvelteKit for CAINE, a comics and animation club at the University of Virginia."
             imagePath="/projects/caine_logo.png"
-            liveUrl="https://caine-six.vercel.app/"
+            liveUrl="https://caine-flame.vercel.app/"
             githubUrl="https://github.com/example/repo"
           />
           <ProjectCard
@@ -138,7 +137,7 @@ export default function Portfolio() {
             <Button variant="ghost" size="icon" className="text-white hover:text-gray-400" onClick={() => window.open("https://github.com/Myshro", '_blank')}>
               <Github className="h-6 w-6" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-white hover:text-gray-400" onClick={() => window.open("https://www.linkedin.com/in/jungtaek-hong/", '_blank')}>
+            <Button variant="ghost" size="icon" className="text-white hover:text-gray-400" onClick={() => window.open("https://www.linkedin.com/in/andrew-hong00/", '_blank')}>
               <Linkedin className="h-6 w-6" />
             </Button>
             <Button variant="ghost" size="icon" className="text-white hover:text-gray-400" onClick={() => window.open("mailto:rsv5fd@virginia.edu", '_blank')}>
@@ -151,7 +150,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="border-t border-gray-800 py-8">
         <div className="max-w-6xl mx-auto px-4 text-center text-gray-400">
-          <p>© 2025 Jungtaek Hong. All rights reserved.</p>
+          <p>© 2025 Andrew Hong. All rights reserved.</p>
         </div>
       </footer>
     </div>
