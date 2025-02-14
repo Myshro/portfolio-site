@@ -29,7 +29,7 @@ export default function Portfolio() {
             Andrew Hong
           </h1>
           <p className="text-gray-400 text-xl mb-8">
-            Hi! I'm currently a second year at the
+            Hi! I am currently a second year at the
             <span className="font-extrabold bg-gradient-to-b from-orange-400 to-purple-500 bg-clip-text text-transparent"> University of Virginia. </span>  
             Here, you can check out what I&apos;m working on.
           </p>
