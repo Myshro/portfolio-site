@@ -74,8 +74,8 @@ export default function Portfolio() {
             <Card className="bg-black p-6 border-gray-800">
               <h3 className="text-xl font-bold mb-4 text-gray-100">Frontend</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>HTML / CSS / JS</li>
-                <li>Typescript</li>
+                <li>HTML / CSS / JS / TS</li>
+                <li>Vue</li>
                 <li>Next.js</li>
                 <li>Tailwind CSS</li>
                 <li>SvelteKit</li>
@@ -104,8 +104,37 @@ export default function Portfolio() {
 
       {/* Projects Section */}
       <div id="projects" className="max-w-6xl mx-auto px-4 py-20">
-        <h2 className="text-3xl font-bold mb-12">Projects (to be completed...)</h2>
+        <h2 className="text-3xl font-bold mb-12">Projects (WIP...)</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <ProjectCard
+            title="Thing2Reality"
+            description="A study on XR communication exploring remote collaboration in VR environments and AI generated 3D models. Conducted the user study to evaluate its impact and provisioned the Flask server."
+            imagePath="/projects/things2reality.png"
+            liveUrl="https://arxiv.org/pdf/2410.07119"
+          />
+          <ProjectCard
+            title="Gravitational Wave Surfer"
+            description="An educational game developed to teach General Relativity concepts. Developed under the UVA Physics Department. Created player controls, models, and molecule simulations."
+            imagePath="/projects/saucer.png"
+            githubUrl="https://github.com/zackrcarson/GravitationalWaveSurfer"
+          />
+          <ProjectCard
+            title="ChatLab"
+            description="A prototypal web app that allows designers to simulate human conversations with AI agents. Created with React, Express, and Redux."
+            imagePath="/projects/chatlab.png"
+          />
+          <ProjectCard
+            title="Struct-AR"
+            description="An AR app that allows users to visualize 3D models of building components and their stresses. "
+            imagePath="/projects/struct_ar.png"
+            liveUrl="https://play.google.com/store/apps/details?id=edu.virginia.struct_ar_google&pcampaignid=web_share"
+          />
+          <ProjectCard
+            title="Levantes"
+            description="A Halo inspired FPS game. Developed state machines and models / animations for player and enemies."
+            imagePath="/projects/levantes.png"
+            liveUrl="https://saasku.itch.io/levantes"
+          />
           <ProjectCard
             title="CAINE Website"
             description="A static site built with SvelteKit for CAINE, a comics and animation club at the University of Virginia."
@@ -121,10 +150,9 @@ export default function Portfolio() {
             githubUrl="https://github.com/example/repo"
           />
           <ProjectCard
-            title="Gravitational Wave Surfer"
-            description="An educational game developed to teach General Relativity concepts. Developed under the UVA Physics Department."
-            imagePath="/projects/saucer.png"
-            githubUrl="https://github.com/zackrcarson/GravitationalWaveSurfer"
+            title="Course Review App"
+            description="A full-stack Java application that allows user's to record course reviews. Uses JDBC and Hibernate for SQL database management, and JavaFX for the frontend."
+            imagePath="/projects/javafx.png"
           />
         </div>
       </div>
