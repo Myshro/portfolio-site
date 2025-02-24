@@ -113,15 +113,15 @@ export default function Portfolio() {
             liveUrl="https://arxiv.org/pdf/2410.07119"
           />
           <ProjectCard
+            title="ChatLab"
+            description="A prototypal web app that allows designers to simulate human conversations with AI agents. Created with React, Express, and Redux."
+            imagePath="/projects/chatlab.png"
+          />
+          <ProjectCard
             title="Gravitational Wave Surfer"
             description="An educational game developed to teach General Relativity concepts. Developed under the UVA Physics Department. Created player controls, models, and molecule simulations."
             imagePath="/projects/saucer.png"
             githubUrl="https://github.com/zackrcarson/GravitationalWaveSurfer"
-          />
-          <ProjectCard
-            title="ChatLab"
-            description="A prototypal web app that allows designers to simulate human conversations with AI agents. Created with React, Express, and Redux."
-            imagePath="/projects/chatlab.png"
           />
           <ProjectCard
             title="Struct-AR"
@@ -147,7 +147,7 @@ export default function Portfolio() {
             description="A stepwise bit operation calculator. 2nd Place Winner of the 'Hack The Map 2024 @UVA' hackathon."
             imagePath="/projects/byte.png"
             liveUrl="https://byte-smith.vercel.app/"
-            githubUrl="https://github.com/Myshro/bitwise-visual"
+            githubUrl="https://github.com/Myshro/bitwise-visual "
           />
           <ProjectCard
             title="Course Review App"
