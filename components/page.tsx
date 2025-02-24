@@ -147,7 +147,7 @@ export default function Portfolio() {
             description="A stepwise bit operation calculator. 2nd Place Winner of the 'Hack The Map 2024 @UVA' hackathon."
             imagePath="/projects/byte.png"
             liveUrl="https://byte-smith.vercel.app/"
-            githubUrl="https://github.com/example/repo"
+            githubUrl="https://github.com/Myshro/bitwise-visual"
           />
           <ProjectCard
             title="Course Review App"
