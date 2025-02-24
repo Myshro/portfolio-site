@@ -151,7 +151,7 @@ export default function Portfolio() {
           />
           <ProjectCard
             title="Course Review App"
-            description="A full-stack Java application that allows user's to record course reviews. Uses JDBC and Hibernate for SQL database management, and JavaFX for the frontend."
+            description="A full-stack Java application that allows user's to record course reviews. Uses JDBC and Hibernate for SQLite database management, and JavaFX for the frontend."
             imagePath="/projects/javafx.png"
           />
         </div>
