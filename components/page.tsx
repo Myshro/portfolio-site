@@ -178,7 +178,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="border-t border-gray-800 py-8">
         <div className="max-w-6xl mx-auto px-4 text-center text-gray-400">
-          <p>© 2025 Andrew Hong. All rights reserved.</p>
+          <p>© 2025 Andrew Hong</p>
         </div>
       </footer>
     </div>
