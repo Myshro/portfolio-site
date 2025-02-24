@@ -75,7 +75,7 @@ export default function Portfolio() {
               <h3 className="text-xl font-bold mb-4 text-gray-100">Frontend</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>HTML / CSS / JS / TS</li>
-                <li>Vue</li>
+                <li>React</li>
                 <li>Next.js</li>
                 <li>Tailwind CSS</li>
                 <li>SvelteKit</li>
