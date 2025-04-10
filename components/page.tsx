@@ -88,6 +88,7 @@ export default function Portfolio() {
                 <li>Python / Django / Flask</li>
                 <li>Java / JDBC</li>
                 <li>SQL</li>
+                <li>PHP</li>
               </ul>
             </Card>
             <Card className="bg-black p-6 border-gray-800">
