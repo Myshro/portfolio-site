@@ -107,6 +107,11 @@ export default function Portfolio() {
         <h2 className="text-3xl font-bold mb-12">Projects (WIP...)</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ProjectCard
+            title="Zoombombing Study"
+            description="A study exploring the use of AI agents and their misuse in online meetings. Involved in implementing a desktop application to control agents."
+            imagePath="/projects/zoombomb.png"
+          />
+          <ProjectCard
             title="Thing2Reality"
             description="A study on XR communication exploring remote collaboration in VR environments and AI generated 3D models. Conducted the user study to evaluate its impact and provisioned the Flask server."
             imagePath="/projects/things2reality.png"
