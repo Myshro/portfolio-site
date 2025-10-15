@@ -12,7 +12,22 @@ export default function Portfolio() {
       {/* Navigation */}
       <nav className="sticky top-0 border-b border-gray-800 bg-black/80 backdrop-blur-sm z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-sm text-gray-500 select-none">{`{AH}`}</div>
+          {/* Left side - bunched together */}
+          <div className="flex items-center gap-2">
+            {/* <div className="text-sm text-gray-500 select-none">{`{AH}`}</div> */}
+            <Button variant="ghost" size="icon" className="text-white hover:text-black hover:bg-white" onClick={() => window.open("https://github.com/Myshro", '_blank')}>
+              <Github className="h-6 w-6" />
+            </Button>
+            <Button variant="ghost" size="icon" className="text-white hover:text-black hover:bg-white" onClick={() => window.open("https://www.linkedin.com/in/andrew-hong00/", '_blank')}>
+              <Linkedin className="h-6 w-6" />
+            </Button>
+            <Button variant="ghost" size="icon" className="text-white hover:text-black hover:bg-white" onClick={() => window.open("mailto:rsv5fd@virginia.edu", '_blank')}>
+              <Mail className="h-6 w-6" />
+            </Button>
+            <span className="text-gray-500 text-sm">rsv5fd@virginia.edu</span>
+          </div>
+          
+          {/* Right side - navigation links */}
           <div className="flex gap-6">
             <a href="#about" className="hover:text-gray-400">About</a>
             <a href="#skills" className="hover:text-gray-400">Skills</a>
@@ -33,13 +48,8 @@ export default function Portfolio() {
             <span className="font-extrabold bg-gradient-to-b from-orange-400 to-purple-500 bg-clip-text text-transparent"> University of Virginia. </span>  
             Here, you can check out what I&apos;m working on.
           </p>
-          <div className="flex gap-4">
-            <Button className="bg-white text-black hover:bg-gray-200" onClick={() => { 
-              document.getElementById('projects')?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-            }}>
-              View Projects
-            </Button>
-            <Button className="bg-white text-black hover:bg-gray-200" onClick={() => {
+          <div className="flex gap-4 items-center">
+            <Button className="bg-black text-white border-2 border-white hover:bg-white hover:text-black transition-colors" onClick={() => {
                 const link = document.createElement('a');
                 link.href = "/resume/AndrewHongResume.pdf"; 
                 link.download = "AndrewHongResume.pdf"; 
@@ -47,6 +57,12 @@ export default function Portfolio() {
             }}>
               Resume
             </Button>
+            <Button className="bg-black text-white border-2 border-white hover:bg-white hover:text-black transition-colors" onClick={() => { 
+              document.getElementById('projects')?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+            }}>
+              Projects
+            </Button>
+            
           </div>
           {RandomQuote()}
         </div>
@@ -75,28 +91,30 @@ export default function Portfolio() {
               <h3 className="text-xl font-bold mb-4 text-gray-100">Frontend</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>HTML / CSS / JS / TS</li>
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Tailwind CSS</li>
-                <li>SvelteKit</li>
+                <li>React / Next.js / Angular</li>
+                <li>ASP.NET</li>
+                <li>Tailwind CSS / Bootstrap</li>
+                <li>Three.js</li>
               </ul>
             </Card>
             <Card className="bg-black p-6 border-gray-800">
               <h3 className="text-xl font-bold mb-4 text-gray-100">Backend</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>Node.js</li>
+                <li>Node.js / Express</li>
                 <li>Python / Django / Flask</li>
-                <li>Java / JDBC</li>
-                <li>SQL</li>
-                <li>PHP</li>
+                <li>Java / SpringBoot</li>
+                <li>PostgreSQL / SQL</li>
+                <li>AWS S3 / Heroku</li>
               </ul>
             </Card>
             <Card className="bg-black p-6 border-gray-800">
               <h3 className="text-xl font-bold mb-4 text-gray-100">Other</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>Git</li>
-                <li>AWS</li>
-                <li>Unity</li>
+                <li>Git / Github Actions / CI/CD</li>
+                <li>Docker / AWS</li>
+                <li>Unity / C#</li>
+                <li>PyTorch / ML</li>
+                <li>ArcGIS / Remote Sensing</li>
               </ul>
             </Card>
           </div>
@@ -192,10 +210,7 @@ export default function Portfolio() {
 }
 
 const quotes: string[] = [
-  "Adventure is worthwhile in itself",
-  "Smooth seas don't make skilled sailors",
   "Do what you can, with what you have, where you are",
-  "A journey of a thousand miles begins with a single step",
   "Blessed are the curious, for they shall have adventures",
   "The greater the difficulty, the more glory in surmounting it"
 ];
