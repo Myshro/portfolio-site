@@ -189,7 +189,7 @@ export default function Portfolio() {
             <Button variant="ghost" size="icon" className="text-white hover:text-gray-400" onClick={() => window.open("https://github.com/Myshro", '_blank')}>
               <Github className="h-6 w-6" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-white hover:text-gray-400" onClick={() => window.open("https://www.linkedin.com/in/andrew-hong00/", '_blank')}>
+            <Button variant="ghost" size="icon" className="text-white hover:text-gray-400" onClick={() => window.open("https://www.linkedin.com/in/andrewhong04/", '_blank')}>
               <Linkedin className="h-6 w-6" />
             </Button>
             <Button variant="ghost" size="icon" className="text-white hover:text-gray-400" onClick={() => window.open("mailto:rsv5fd@virginia.edu", '_blank')}>
