@@ -11,6 +11,7 @@ interface ProjectCardProps {
   imagePath: string;
   liveUrl?: string;
   githubUrl?: string;
+  videoUrl?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ 
@@ -18,7 +19,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description, 
   imagePath, 
   liveUrl, 
-  githubUrl 
+  githubUrl,
+  videoUrl,
 }) => {
   return (
     <Card className="bg-black border-gray-800 overflow-hidden">
@@ -51,6 +53,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               onClick={() => window.open(githubUrl, '_blank')}
             >
               GitHub
+            </Button>
+          )}
+          {videoUrl && (
+            <Button 
+              className="bg-white text-black hover:bg-gray-200" 
+              size="sm"
+              onClick={() => window.open(videoUrl, '_blank')}
+            >
+              Video
             </Button>
           )}
         </div>

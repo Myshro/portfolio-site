@@ -28,7 +28,7 @@ export default function Portfolio() {
           </div>
           
           {/* Right side - navigation links */}
-          <div className="flex gap-6">
+          <div className="hidden md:flex gap-6">
             <a href="#about" className="hover:text-gray-400">About</a>
             <a href="#skills" className="hover:text-gray-400">Skills</a>
             <a href="#projects" className="hover:text-gray-400">Projects</a>
@@ -111,10 +111,9 @@ export default function Portfolio() {
               <h3 className="text-xl font-bold mb-4 text-gray-100">Other</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>Git / Github Actions / CI/CD</li>
-                <li>Docker / AWS</li>
-                <li>Unity / C#</li>
                 <li>PyTorch / ML</li>
-                <li>ArcGIS / Remote Sensing</li>
+                <li>Docker</li>
+                <li>Unity / C#</li>
               </ul>
             </Card>
           </div>
@@ -130,6 +129,7 @@ export default function Portfolio() {
             description="A study on XR communication exploring remote collaboration in VR environments and AI generated 3D models. Conducted the user study to evaluate its impact and provisioned the Flask server."
             imagePath="/projects/things2reality.png"
             liveUrl="https://erzhenh.com/pdfs/uist25_Thing2Reality.pdf"
+            videoUrl='https://www.youtube.com/watch?v=sKrq77cOtC4'
           />
           <ProjectCard
             title="ChatLab"
@@ -137,6 +137,7 @@ export default function Portfolio() {
             imagePath="/projects/dialoglab-fig.png"
             liveUrl='https://erzhenh.com/pdfs/uist25_DialogLab.pdf'
             githubUrl='https://github.com/ecruhue/DialogLab'
+            videoUrl='https://www.youtube.com/watch?v=U2Ag_Ktobzw'
           />
           <ProjectCard
             title="Zoombombing Study"
@@ -209,7 +210,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="border-t border-gray-800 py-8">
         <div className="max-w-6xl mx-auto px-4 text-center text-gray-400">
-          <p>© 2025 Andrew Hong</p>
+          <p>© 2026 Andrew Hong</p>
         </div>
       </footer>
     </div>
