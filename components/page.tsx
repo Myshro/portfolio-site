@@ -10,7 +10,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-black text-white font-mono sticky ">
       {/* Navigation */}
-      <nav className="sticky top-0 border-b border-gray-800 bg-black/80 backdrop-blur-sm z-50">
+      <nav className="md:sticky top-0 border-b border-gray-800 bg-black/80 backdrop-blur-sm z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           {/* Left side - bunched together */}
           <div className="flex items-center gap-2">
