@@ -18,13 +18,13 @@ export default function Portfolio() {
             <Button variant="ghost" size="icon" className="text-white hover:text-black hover:bg-white" onClick={() => window.open("https://github.com/Myshro", '_blank')}>
               <Github className="h-6 w-6" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-white hover:text-black hover:bg-white" onClick={() => window.open("https://www.linkedin.com/in/andrew-hong00/", '_blank')}>
+            <Button variant="ghost" size="icon" className="text-white hover:text-black hover:bg-white" onClick={() => window.open("https://www.linkedin.com/in/andrewhong04/", '_blank')}>
               <Linkedin className="h-6 w-6" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-white hover:text-black hover:bg-white" onClick={() => window.open("mailto:rsv5fd@virginia.edu", '_blank')}>
+            <Button variant="ghost" size="icon" className="text-white hover:text-black hover:bg-white" onClick={() => window.open("mailto:jungtaekhong3@gmail.com", '_blank')}>
               <Mail className="h-6 w-6" />
             </Button>
-            <span className="text-gray-500 text-sm">rsv5fd@virginia.edu</span>
+            <span className="text-gray-500 text-sm">jungtaekhong3@gmail.com</span>
           </div>
           
           {/* Right side - navigation links */}
@@ -44,24 +44,24 @@ export default function Portfolio() {
             Andrew Jungtaek Hong
           </h1>
           <p className="text-gray-400 text-xl mb-8">
-            Hi! I&apos;m currently a second year at the
+            Hi! I&apos;m currently a third year at the
             <span className="font-extrabold bg-gradient-to-b from-orange-400 to-purple-500 bg-clip-text text-transparent"> University of Virginia. </span>  
             Here, you can check out what I&apos;m working on.
           </p>
           <div className="flex gap-4 items-center">
-            <Button className="bg-black text-white border-2 border-white hover:bg-white hover:text-black transition-colors" onClick={() => {
+            {/* <Button className="bg-black text-white border-2 border-white hover:bg-white hover:text-black transition-colors" onClick={() => {
                 const link = document.createElement('a');
                 link.href = "/resume/AndrewHongResume.pdf"; 
                 link.download = "AndrewHongResume.pdf"; 
                 link.click();
             }}>
               Resume
-            </Button>
-            <Button className="bg-black text-white border-2 border-white hover:bg-white hover:text-black transition-colors" onClick={() => { 
+            </Button> */}
+            {/* <Button className="bg-black text-white border-2 border-white hover:bg-white hover:text-black transition-colors" onClick={() => { 
               document.getElementById('projects')?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
             }}>
               Projects
-            </Button>
+            </Button> */}
             
           </div>
           {RandomQuote()}
@@ -69,12 +69,12 @@ export default function Portfolio() {
         <div className="hidden lg:block">
           <div className="relative w-64 h-64">
             <div className="absolute top-0 right-0 w-40 h-40 border-4 border-white rotate-12 flex items-center justify-center">
-              <span className="text-white text-9xl font-bold transform translate-y-2">
+              <span className="text-white text-9xl font-bold transform translate-y-2 select-none">
                 {"開"}
               </span>
             </div>
             <div className="absolute bottom-0 -left-4 w-40 h-40 border-4 border-black bg-white rotate-[-12deg] flex items-center justify-center">
-              <span className="text-black text-9xl font-bold transform -translate-y-2">
+              <span className="text-black text-9xl font-bold transform -translate-y-2 select-none">
                 {"{}"}
               </span>
             </div>
@@ -126,26 +126,22 @@ export default function Portfolio() {
         <h2 className="text-3xl font-bold mb-12">Projects (WIP...)</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ProjectCard
-            title="Zoombombing Study"
-            description="A study exploring the use of AI agents and their misuse in online meetings. Involved in implementing a desktop application to control agents."
-            imagePath="/projects/zoombomb.png"
-          />
-          <ProjectCard
             title="Thing2Reality"
             description="A study on XR communication exploring remote collaboration in VR environments and AI generated 3D models. Conducted the user study to evaluate its impact and provisioned the Flask server."
             imagePath="/projects/things2reality.png"
-            liveUrl="https://arxiv.org/pdf/2410.07119"
+            liveUrl="https://erzhenh.com/pdfs/uist25_Thing2Reality.pdf"
           />
           <ProjectCard
             title="ChatLab"
-            description="A prototypal web app that allows designers to simulate human conversations with AI agents. Created with React, Express, and Redux."
-            imagePath="/projects/chatlab.png"
+            description="A study / prototypal web app that allows designers to simulate human conversations with AI agents. Created with React, Express, and Redux."
+            imagePath="/projects/dialoglab-fig.png"
+            liveUrl='https://erzhenh.com/pdfs/uist25_DialogLab.pdf'
+            githubUrl='https://github.com/ecruhue/DialogLab'
           />
           <ProjectCard
-            title="Gravitational Wave Surfer"
-            description="An educational game developed to teach General Relativity concepts. Developed under the UVA Physics Department. Created player controls, models, and molecule simulations."
-            imagePath="/projects/saucer.png"
-            githubUrl="https://github.com/zackrcarson/GravitationalWaveSurfer"
+            title="Zoombombing Study"
+            description="A study exploring the use of AI agents and their misuse in online meetings. Involved in implementing a desktop application to control agents."
+            imagePath="/projects/zoombomb.png"
           />
           <ProjectCard
             title="Struct-AR"
@@ -154,17 +150,28 @@ export default function Portfolio() {
             liveUrl="https://play.google.com/store/apps/details?id=edu.virginia.struct_ar_google&pcampaignid=web_share"
           />
           <ProjectCard
+            title="Daigakon"
+            description="A static site built with React for a Daigakon, a college run animation convention at the University of Virginia."
+            imagePath="/projects/daigakon.png"
+            liveUrl="https://daigakon.vercel.app/"
+          />
+          <ProjectCard
+            title="CAINE"
+            description="A static site built with SvelteKit for CAINE, a comics and animation club at the University of Virginia."
+            imagePath="/projects/caine_logo.png"
+            liveUrl="https://caine-flame.vercel.app/"
+          />
+          <ProjectCard
+            title="Gravitational Wave Surfer"
+            description="An educational game developed to teach General Relativity concepts. Developed under the UVA Physics Department. Created player controls, models, and molecule simulations."
+            imagePath="/projects/saucer.png"
+            githubUrl="https://github.com/zackrcarson/GravitationalWaveSurfer"
+          />
+          <ProjectCard
             title="Levantes"
             description="A Halo inspired FPS game. Developed state machines and models / animations for player and enemies."
             imagePath="/projects/levantes.png"
             liveUrl="https://saasku.itch.io/levantes"
-          />
-          <ProjectCard
-            title="CAINE Website"
-            description="A static site built with SvelteKit for CAINE, a comics and animation club at the University of Virginia."
-            imagePath="/projects/caine_logo.png"
-            liveUrl="https://caine-flame.vercel.app/"
-            githubUrl="https://github.com/example/repo"
           />
           <ProjectCard
             title="ByteSmith"
@@ -192,7 +199,7 @@ export default function Portfolio() {
             <Button variant="ghost" size="icon" className="text-white hover:text-gray-400" onClick={() => window.open("https://www.linkedin.com/in/andrewhong04/", '_blank')}>
               <Linkedin className="h-6 w-6" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-white hover:text-gray-400" onClick={() => window.open("mailto:rsv5fd@virginia.edu", '_blank')}>
+            <Button variant="ghost" size="icon" className="text-white hover:text-gray-400" onClick={() => window.open("mailto:jungtaekhong3@gmail.com", '_blank')}>
               <Mail className="h-6 w-6" />
             </Button>
           </div>
