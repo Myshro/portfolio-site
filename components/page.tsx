@@ -93,8 +93,7 @@ export default function Portfolio() {
                 <li>HTML / CSS / JS / TS</li>
                 <li>React / Next.js / Angular</li>
                 <li>ASP.NET</li>
-                <li>Tailwind CSS / Bootstrap</li>
-                <li>Three.js</li>
+                <li>Tailwind / Bootstrap</li>
               </ul>
             </Card>
             <Card className="bg-black p-6 border-gray-800">
