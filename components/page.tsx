@@ -149,7 +149,7 @@ export default function Portfolio() {
             imagePath="/projects/struct_ar.png"
             liveUrl="https://play.google.com/store/apps/details?id=edu.virginia.struct_ar_google&pcampaignid=web_share"
           />
-          <ProjectCard
+          {/* <ProjectCard
             title="Daigakon"
             description="A static site built with React for a Daigakon, a college run animation convention at the University of Virginia."
             imagePath="/projects/daigakon.png"
@@ -160,7 +160,7 @@ export default function Portfolio() {
             description="A static site built with SvelteKit for CAINE, a comics and animation club at the University of Virginia."
             imagePath="/projects/caine_logo.png"
             liveUrl="https://caine-flame.vercel.app/"
-          />
+          /> */}
           <ProjectCard
             title="Gravitational Wave Surfer"
             description="An educational game developed to teach General Relativity concepts. Developed under the UVA Physics Department. Created player controls, models, and molecule simulations."
