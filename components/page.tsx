@@ -1,11 +1,9 @@
 'use client';
-
-import { Github, Linkedin, Mail } from 'lucide-react'
+import { Github, Linkedin } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import ProjectCard from './ProjectCard'
 import { useEffect, useState } from 'react';
-
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-black text-white font-mono sticky ">
@@ -26,7 +24,6 @@ export default function Portfolio() {
           </div>
         </div>
       </nav>
-
       {/* Hero Section */}
       <div id="about" className="max-w-6xl mx-auto px-4 py-20 flex items-center justify-between">
         <div className="max-w-2xl">
@@ -54,7 +51,8 @@ export default function Portfolio() {
             </Button> */}
             
           </div>
-          {RandomQuote()}
+          {/* Render as a component (not called as a function) so hooks work correctly */}
+          <RandomQuote />
         </div>
         <div className="hidden lg:block">
           <div className="relative w-64 h-64">
@@ -69,9 +67,8 @@ export default function Portfolio() {
               </span>
             </div>
           </div>
-</div>
+        </div>
       </div>
-
       {/* Skills Section */}
       <div id="skills" className="bg-gray-900 py-20">
         <div className="max-w-6xl mx-auto px-4">
@@ -109,7 +106,6 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-
       {/* Projects Section */}
       <div id="projects" className="max-w-6xl mx-auto px-4 py-20">
         <h2 className="text-3xl font-bold mb-12">Projects (WIP...)</h2>
@@ -166,7 +162,6 @@ export default function Portfolio() {
           />
         </div>
       </div>
-
       {/* Contact Section */}
       <div id="contact" className="bg-gray-900 py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
@@ -181,7 +176,6 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-
       {/* Footer */}
       <footer className="border-t border-gray-800 py-8">
         <div className="max-w-6xl mx-auto px-4 text-center text-gray-400">
@@ -191,20 +185,16 @@ export default function Portfolio() {
     </div>
   )
 }
-
 const quotes: string[] = [
   "Do what you can, with what you have, where you are",
   "Blessed are the curious, for they shall have adventures",
   "The greater the difficulty, the more glory in surmounting it"
 ];
-
 const RandomQuote = () => {
   const [quote, setQuote] = useState('');
-
   useEffect(() => {
     setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
   }, []);
-
   return (
     <p className="text-gray-500 text-l mt-8 italic">
       &ldquo;{quote}&rdquo;
